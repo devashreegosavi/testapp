@@ -1,0 +1,5 @@
+<form (submit)="submitForm()">
+    <input [(ngModel)]="userData.name" placeholder="Name" name="name" required>
+    <input [(ngModel)]="userData.age" placeholder="Age" name="age" required type="number">
+    <button type="submit">Submit</button>
+</form>

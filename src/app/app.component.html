@@ -1,0 +1,21 @@
+<h1>Button click example</h1>
+<app-button-click (buttonClicked)="onButtonClick($event)"></app-button-click>
+
+<br><br><br>
+
+<h1>User Form example</h1>
+<app-user-form (formSubmitted)="onFormSubmit($event)"></app-user-form>
+
+<br><br><br>
+
+<app-notification-sender></app-notification-sender>
+
+<br><br><br>
+
+<app-notification-receiver></app-notification-receiver>
+
+<app-item-output (newItemEvent)="addItem($event)"></app-item-output>
+
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
