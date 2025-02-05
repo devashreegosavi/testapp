@@ -19,3 +19,7 @@
 <ul>
     <li *ngFor="let item of items">{{item}}</li>
 </ul>
+
+<br><br>
+<h1>Counter example</h1>
+<app-counter [count]="counter" (countChange)="updateCounter($event)"></app-counter>

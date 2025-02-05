@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'testapp';
 
   items = ['item1','item2','item3','item4'];
-
+  counter = 0;
   onButtonClick(message : string){
     console.log(message);
   }
@@ -21,5 +21,9 @@ export class AppComponent {
 
   addItem(value: string){
     this.items.push(value);
+  }
+
+  updateCounter(newval : number){
+    this.counter = newval;
   }
 }
